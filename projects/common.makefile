@@ -13,10 +13,10 @@ makedirs:
 	mkdir -p $(I_TEST)
 
 $(I)/%.o: src/%.cpp | makedirs
-	g++ -MMD -c -o $@ $<
+	g++ -MMD -c -o $@ $< -std=c++11
 
 $(I_TEST)/%.o: srcTest/%.cpp | makedirs
-	g++ -MMD  ${TEST_INC} -c -o $@ $<
+	g++ -MMD  ${TEST_INC} -c -o $@ $< -std=c++11
 
 
 ${GTEST_LIB}:
