@@ -21,6 +21,9 @@
 							<builder id="cdt.managedbuild.target.gnu.builder.base.231341294" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1349289577" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1530534652" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.185466945" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/fab/raspberry-control/externals/googletest/include"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.980577607" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.38944247" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
@@ -51,8 +54,20 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="libgpio.null.1153950327" name="libgpio"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/libgpio"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1146311440;cdt.managedbuild.toolchain.gnu.base.1146311440.1059374059;cdt.managedbuild.tool.gnu.cpp.compiler.base.1530534652;cdt.managedbuild.tool.gnu.cpp.compiler.input.980577607">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1146311440;cdt.managedbuild.toolchain.gnu.base.1146311440.1059374059;cdt.managedbuild.tool.gnu.c.compiler.base.38944247;cdt.managedbuild.tool.gnu.c.compiler.input.1654891524">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
