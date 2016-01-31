@@ -1,6 +1,9 @@
 include ../common.makefile
 
-libgpio.a: $(OBJS)
+STATIC_LIB = libgpio.a
+
+all: $(STATIC_LIB) ${EXEC_TEST}
+
+${STATIC_LIB}: $(OBJS)
 	ar rcs $@ $?
 
-.DEFAULT_GOAL:= testExecutable

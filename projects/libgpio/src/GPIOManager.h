@@ -28,7 +28,7 @@ public:
         // we don't want.
     public:
         void doSomething();
-        GPIOManager(GPIOManager const&)               = delete;
+        GPIOManager(GPIOManager const&)		= delete;
         void operator=(GPIOManager const&)  = delete;
 
         // Note: Scott Meyers mentions in his Effective Modern
