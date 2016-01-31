@@ -27,7 +27,7 @@ public:
         // We can use the better technique of deleting the methods
         // we don't want.
     public:
-        virtual void doSomething();
+        void doSomething();
         GPIOManager(GPIOManager const&)               = delete;
         void operator=(GPIOManager const&)  = delete;
 
