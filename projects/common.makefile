@@ -30,7 +30,7 @@ ${TEST_EXECUTABLE}: ${OBJS} ${OBJS_TEST} ${GTEST_LIB}
 	g++ -o $@ $^ -pthread
 
 ${EXEC_TEST}: ${TEST_EXECUTABLE}
-	./${TEST_EXECUTABLE}
+	./${TEST_EXECUTABLE} --gtest_output=xml:gtestresults.xml
 	
 all: ${DEFAULT_TARGETS}
 	
