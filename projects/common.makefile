@@ -6,7 +6,8 @@ OBJS=$(SRCS:src/%.cpp=$(I)/%.o)
 OBJS_TEST=$(SRCS_TEST:srcTest/%.cpp=$(I_TEST)/%.o)
 GTEST_LIB=../../externals/googletest/make/gtest.a
 GTEST_INC=../../externals/googletest/include/
-TEST_INC=-I${GTEST_INC} -Isrc/
+INC =
+TEST_INC=-I${GTEST_INC} ${INC} -Isrc/
 TEST_EXECUTABLE = testExecutable
 EXEC_TEST = executeTest
 DEFAULT_TARGETS = ${EXEC_TEST}
@@ -16,7 +17,7 @@ makedirs:
 	mkdir -p $(I_TEST)
 
 $(I)/%.o: src/%.cpp | makedirs
-	g++ -MMD -c -o $@ $< -std=c++11
+	g++ -MMD ${INC} -c -o $@ $< -std=c++11
 
 $(I_TEST)/%.o: srcTest/%.cpp | makedirs
 	g++ -MMD  ${TEST_INC} -c -o $@ $< -std=c++11
