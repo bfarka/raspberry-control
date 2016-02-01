@@ -1,4 +1,4 @@
-subdirs := libgpio libgpio.raspberry
+subdirs := libutil libgpio libgpio.raspberry
 
 .PHONY: all $(subdirs)
 

@@ -1,5 +1,4 @@
-/build/
-*.a
 /buildTest/
-/testExecutable
 /gtestresults.xml
+/libutil.a
+/testExecutable
