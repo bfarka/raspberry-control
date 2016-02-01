@@ -10,7 +10,7 @@
 
 
 	template<typename T>
-	bool contains(T lower, T upper, T value){
+	inline bool contains(T lower, T upper, T value){
 		return lower <= value && upper >= value;
 	}
 
