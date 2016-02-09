@@ -6,6 +6,12 @@
  */
 
 #include "GPIOValidator.h"
+#include <stdio.h>
+#include <iostream>
+#include <map>
+#include <string>
+
+using namespace std;
 
 namespace GPIO{
 
@@ -22,8 +28,16 @@ namespace GPIO{
 		return false;
 	}
 
+	GPIOValidator::GPIOValidator(std::string properties){
+
+	}
+
+	void loadDeviceProperties(std::string filename){
+		cout << "load properties" << endl;
+	}
+
+
 
 
 }
-
 

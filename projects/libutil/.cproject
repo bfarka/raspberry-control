@@ -23,7 +23,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1675983000" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.265830563" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.2034743482" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.1570875239" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.cpp.compiler.option.include.paths.1570875239" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/fab/raspberry-control/externals/googletest/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.578750633" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -42,6 +42,26 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1795697049" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1412870787" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.375331224.1284695374" name="/" resourcePath="srcTest">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1384038386" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1395400779" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.2109691358"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.119316524" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1675983000">
+								<option id="gnu.cpp.compiler.option.include.paths.1572815232" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/fab/raspberry-control/externals/googletest/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/libutil/src}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.7829795" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.32786075" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.778267434">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2001452484" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1748773923" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1095141458"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.501712043" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.583393103"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.2075882328" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug.1795697049">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.36090416" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -118,4 +138,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
