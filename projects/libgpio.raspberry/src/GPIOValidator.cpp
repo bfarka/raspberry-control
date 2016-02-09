@@ -21,6 +21,7 @@ namespace GPIO{
 
 	GPIOValidator::~GPIOValidator(void){
 
+
 	}
 
 	bool GPIOValidator::isValid(int gpio){
@@ -28,7 +29,10 @@ namespace GPIO{
 		return false;
 	}
 
-	GPIOValidator::GPIOValidator(std::string properties){
+
+
+	GPIOValidator::GPIOValidator( std::string properties){
+
 
 	}
 
