@@ -10,13 +10,17 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <fstream>
+
+
+#define RASPBERRY_CPUINFO "/proc/cpuinfo"
 
 using namespace std;
 
 namespace GPIO{
 
 	GPIOValidator::GPIOValidator(void){
-
+		GPIOValidator(RASPBERRY_CPUINFO);
 	}
 
 	GPIOValidator::~GPIOValidator(void){
@@ -32,7 +36,19 @@ namespace GPIO{
 
 
 	GPIOValidator::GPIOValidator( std::string properties){
+		cout << properties << endl;
 
+		 ifstream inFile(properties);
+		  if (!inFile) {
+		    cerr << "File " << properties << " not found." << endl;
+		  }
+
+		  string line;
+		   while (getline(inFile, line)) {
+		     if (line.empty()) continue;
+
+		     cout << line << endl;
+		   }
 
 	}
 

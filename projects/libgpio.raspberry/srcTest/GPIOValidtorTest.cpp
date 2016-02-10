@@ -17,7 +17,7 @@ class GPIOValidatorTest : public testing::Test {
 
 TEST_F(GPIOValidatorTest, testProperties){
 
-
+	GPIO::GPIOValidator();
 	GPIO::GPIOValidator( "asdf");
 
 }

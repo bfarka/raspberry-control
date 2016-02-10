@@ -23,10 +23,9 @@ public:
 	~GPIOValidator();
 
 
-
 private:
 	FRIEND_TEST(GPIOValidatorTest, testProperties);
-	GPIOValidator(std::string);
+	GPIOValidator( std::string);
 	const std::map<int, std::string> deviceProperties;
 
 };
